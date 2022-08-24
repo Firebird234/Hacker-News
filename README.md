@@ -2,6 +2,25 @@
 
 ---
 
+## [Демо проекта](https://hacker-news-lac-five.vercel.app/)
+
+---
+
+## Главная страница с новостями
+
+![Превью проекта HackerNews](https://github.com/General4056/Hacker-News/blob/main/Demo/main.PNG)
+
+## Логин и регистрация
+
+![Превью проекта HackerNews](https://github.com/General4056/Hacker-News/blob/main/Demo/Login.PNG)
+
+## Страница новости с комментариями
+
+![Превью проекта HackerNews](https://github.com/General4056/Hacker-News/blob/main/Demo/Story.PNG)
+
+## Информация о пользователе
+
+![Превью проекта HackerNews](https://github.com/General4056/HackerNews/blob/main/Demo/User.PNG)
 
 ## Стек
 
@@ -32,6 +51,6 @@
 
 Для запуска проекта:
 
-1. Клонировать репозиторий git clone https://github.com/Firebird234/Hacker-News.git
+1. Клонировать репозиторий git clone https://github.com/General4056/Hacker-News.git
 2. Установить зависимости `npm install`
 3. Запустить проект `npm start`
