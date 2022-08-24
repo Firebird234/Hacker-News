@@ -1,0 +1,148 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  height: 60px;
+  background-color: rgb(217, 245, 255);
+  padding: 0 36px;
+  box-shadow: 0px 8px 13px rgba(57 153 227 / 20%);
+  z-index: 1;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  transition: 0.3s;
+}
+
+.header__title:hover {
+  transform: scale(1.05);
+}
+
+.header__logo {
+  display: block;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-image: url(../../images/hacker.png);
+  background-color: transparent;
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.search {
+  width: 600px;
+  position: relative;
+}
+
+.search__input {
+  padding-left: 5px;
+  height: 45px;
+  width: 100%;
+  background-color: rgb(201 227 253);
+  border: 0;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.search__input:hover {
+  background-color: white;
+  outline-color: rgb(92, 205, 247);
+  outline-width: 3px;
+}
+
+.search__input:focus {
+  background-color: white;
+  outline-color: rgb(92, 205, 247);
+  outline-width: 3px;
+}
+
+.search__input::placeholder {
+  font-size: 18px;
+}
+
+.search__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-color: transparent;
+  background-image: url(../../images/search.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45px;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.burger-button {
+  display: none;
+  margin-right: 10px;
+  background-image: url(../../images/menu.svg);
+  border: 0;
+  background-color: transparent;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.burger-button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
+  .search {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    padding: 0 18px;
+  }
+
+  .search {
+    width: 75%;
+  }
+  .burger-button {
+    display: block;
+  }
+
+  .header__title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .search__input::placeholder {
+    font-size: 14px;
+  }
+  .search {
+    width: 50%;
+  }
+}

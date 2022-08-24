@@ -1,0 +1,9 @@
+.saved {
+  min-height: calc(100vh - 60px);
+  margin-top: 60px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(242, 242, 242);
+  flex-direction: column;
+}
